@@ -36,10 +36,10 @@
 ## Resources
 
 - 课程网站：https://mlc.ai/summer22-zh/
-- 课程视频：2022年 https://www.bilibili.com/video/BV15v4y1g7EU/
+- 课表：https://mlc.ai/summer22-zh/schedule
+- 课程视频（2022年）：https://www.bilibili.com/video/BV15v4y1g7EU/
 - 课程笔记：https://mlc.ai/zh/index.html
-- 课程资料：https://mlc.ai/summer22-zh/schedule
-- 课程作业：https://github.com/mlc-ai/notebooks -> assignment
+- 课程演示 & 作业：https://github.com/mlc-ai/notebooks
 
 ## Notes
 
@@ -80,3 +80,26 @@
   - call_tir 构造，将目标传递规范的元函数嵌入到计算图中
   - Dataflow block
 - 计算图允许调用环境库函数和 `TensorIR` 函数。
+- 将参数绑定到 IRModule（模型中存放权重）
+- Build
+
+### 4. [自动化程序优化](./4-自动化程序优化)
+
+- 「随机变换」帮助我们指定可能程序的搜索空间。
+- Meta-Schedule 在搜索空间中搜索，并找到优化后的程序。
+- 我们可以使用另一种变换，将初始的元张量函数替换为优化后的函数，并更新端到端执行流程。
+
+算子搜索：“可能的变换是什么”。
+
+- 更多级的循环转换
+- 中间计算的矢量化
+- 并行化和循环展开
+
+分析程序相对应的一些规律，尝试一些变换
+
+如何进行搜索（机器学习最优化算法），如何为搜索空间建立规则（block大小，算子间的关联性等），可以借鉴[CS50’s ai](https://github.com/doongz/cs50-ai) 这门课
+
+
+
+
+

@@ -706,7 +706,7 @@ print("MyModuleMixture Prediction:", class_names[pred_kind[0]])
 MyModuleMixture Prediction: Sneaker
 ```
 
-## 3.8. 将参数绑定到 IRModule
+## 3.8. 将参数绑定到 IRModule（模型中存放权重）
 
 在到目前为止的所有示例中，我们通过显式传递参数来构造主函数。 在许多情况下，将参数绑定为附加到 IRModule 的常量通常会降低API的复杂程度。 以下代码通过将参数名称与 nd_params 中的键匹配来创建绑定。
 
